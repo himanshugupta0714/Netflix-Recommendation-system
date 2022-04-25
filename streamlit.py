@@ -42,7 +42,14 @@ def recommend(movie):
     for i in movies_list:
        st.write(movies.iloc[i[0]].title)
 image = Image.open('images.jpg')
-col1, col2, col3 = st.columns([0.2, 5, 0.2])
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write(' ')
+with col2:
+    st.image("images.jpg")
+with col3:
+    st.write(' ')
 st.image(image, width = 140)    
 st.write("Netflix Recommendation System")
 user_input = st.text_input("Enter Movie")
