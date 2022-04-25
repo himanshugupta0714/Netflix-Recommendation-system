@@ -50,7 +50,7 @@ with col2:
     st.image("images.jpg")
 with col3:
     st.write(' ')
-st.image(image, width = 140)    
+#st.image(image, width = 140)    
 st.write("Netflix Recommendation System")
 user_input = st.text_input("Enter Movie")
 if user_input:
