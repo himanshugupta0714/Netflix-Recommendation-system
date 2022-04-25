@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
+from PIL import Image
 
 movies = pd.read_csv('movies.csv')
 required_columns =['title','original_title', 'tagline', 'keywords', 'overview', 'genres', 'cast', 'director']
